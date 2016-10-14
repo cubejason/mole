@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  MoleFinance
+//
+//  Created by qianfeng on 15/9/30.
+//  Copyright (c) 2015年 林庆国. All rights reserved.
+//
+
+#ifndef MoleFinance_PrefixHeader_pch
+#define MoleFinance_PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//第三方库
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+//得到frame
+#define CGRM(X,Y,W,H)  CGRectMake(X,Y,W,H)
+//屏幕的高和宽
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+//得到一个特定大小得图片
+#import "image.h"
+#import "Commond.h"
+//颜色
+#define Color(r,g,b,a)     [UIColor colorWithRed:r/225.f green:g/225.f blue:b/225.f alpha:a]
+//打印
+#define print(x)  NSLog(@"######%@",x);
+//网址
+#import "API.h"
+
+#endif

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "30277f2a-a516-4c4e-9a16-6a1a84a0c286",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "30277f2a-a516-4c4e-9a16-6a1a84a0c286" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "30277f2a-a516-4c4e-9a16-6a1a84a0c286" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D0DB3B45-CD05-4722-85F8-72CC148FBAC8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "30277f2a-a516-4c4e-9a16-6a1a84a0c286" : "MoleFinance\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MoleFinance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XMoleFinance\/MoleFinance.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/2324083997%40qq.com@code.taobao.org\/svn\/MoleFinance",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30277f2a-a516-4c4e-9a16-6a1a84a0c286"
+    }
+  ]
+}

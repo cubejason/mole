@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;\red217\green11\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12720\viewh8080\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs36 \cf0 \
+\'d2\'aa\'ce\'c5\'a1\'aa\'d6\'f7\'cc\'e2\'a3\'bahttp://newsapi.eastmoney.com/kuaixun/v2/api/yw?banner=banner&encode=ywjh&limit=20\
+
+\fs24 \
+\
+
+\fs36 \'ce\'c4\'d5\'c2\'b1\'ea\'cc\'e2 \'a3\'bahttp://newsapi.eastmoney.com/kuaixun/v2/api/topic?topicname=bigdata\
+\
+   \'ce\'c4\'d5\'c2+\'c6\'c0\'c2\'db\'a3\'bahttp://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20150928551958961&newstype=1\
+\
+\'c6\'c0\'c2\'db\'a3\'bahttp://gubaapi.eastmoney.com/v3/read/Article/Reply/ArticleReplyList.aspx?pi=718409418339178800272776231515065504b2f477a67566b2b57416f4d3234716963796d4a6b7961556d73734e6279364651687737657737693653714b49474e3938354a2b595a547467776e494c6645574776474c6d364155493373676d737574634c393148646f732f673355537946696d63413d&deviceid=4dd54ba0cb5057c9e17d5eff2725876f&version=57&product=StockWay&plat=Android&newsid=icom20150928552075352&p=1&ps=20&sort=1\
+\
+  \'b9\'c9\'c6\'b1\'a3\'ba http://apis.baidu.com/apistore/stockservice/hkstock?stockid=00168&list=1\
+\
+\
+\'ca\'be\'c0\'fd\'a3\'ba\
+NSString *httpUrl = @"http://apis.baidu.com/apistore/stockservice/hkstock";\
+NSString *httpArg = @"stockid=00168&list=1";\
+[self request: httpUrl withHttpArg: httpArg];\
+\
+-(void)request: (NSString*)httpUrl withHttpArg: (NSString*)HttpArg  \{\
+    NSString *urlStr = [[NSString alloc]initWithFormat: @"%@?%@", httpUrl, HttpArg];\
+    NSURL *url = [NSURL URLWithString: urlStr];\
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL: url cachePolicy: NSURLRequestUseProtocolCachePolicy timeoutInterval: 10];\
+    [request setHTTPMethod: @"GET"];\
+    [request addValue: @"\'c4\'fa\'d7\'d4\'bc\'ba\'b5\'c4apikey" forHTTPHeaderField: @"apikey"];\
+    [NSURLConnection sendAsynchronousRequest: request\
+        queue: [NSOperationQueue mainQueue]\
+        completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error)\{\
+            if (error) \{\
+                NSLog(@"Httperror: %@%ld", error.localizedDescription, error.code);\
+            \} else \{\
+                NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];\
+                NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];\
+                NSLog(@"HttpResponseCode:%ld", responseCode);\
+                NSLog(@"HttpResponseBody %@",responseString);\
+            \}\
+        \}]\
+\
+\
+apikey \'a3\'bab36264b7c4aace93519a45305fcfda92\
+\
+http://moer.jiemian.com/wapHotArticleList2_JM.htm?from=JM&push%EF%BC%9Dno\
+http://moer.jiemian.com/wapInvestmentList_JM.htm?from=JM&push%EF%BC%9Dno\
+http://moer.jiemian.com/wapMarketDynaList_JM.htm?from=JM&push%EF%BC%9Dno\
+http://moer.jiemian.com/wapScoopList_JM.htm?from=JM&push%EF%BC%9Dno\
+\
+\
+\
+http://newsapi.eastmoney.com/kuaixun/v2/api/yw?banner=banner&encode=ywjh&limit=20    //\'ca\'d7\'d2\'b3\
+http://newsapi.eastmoney.com/kuaixun/v2/api/yw?banner=banner&encode=ywjh&limit=20&min_id=20151013555055316    //\'cf\'c2\'c0\'ad\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151013555230345&newstype=1   //\'b5\'e3\'bb\'f7\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151013555033219&newstype=1   //\'b5\'e3\'bb\'f7\
+http://newsapi.eastmoney.com/kuaixun/v2/api/topic?topicname=chinaqe   //\'d7\'a8\'cc\'e2\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151011554609043&newstype=1    \'b5\'e3\'bb\'f7\'d7\'a8\'cc\'e2\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151012554911654&newstype=1    \'b5\'e3\'bb\'f7\'d7\'a8\'cc\'e2\
+\
+http://newsapi.eastmoney.com/kuaixun/v2/api/yw?banner=banner&encode=dpfx&limit=20       //\'b4\'f3\'c5\'cc\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151015555910633&newstype=1    //\'b5\'e3\'bb\'f7\
+\
+http://newsapi.eastmoney.com/kuaixun/v2/api/list?column=zhibo&limit=20  //\'d6\'b1\'b2\'a5\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151013APPGPcHyQdBEIndustry&newstype=4   // \'b5\'e3\'bb\'f7\
+\
+\cf2 \cb1 http://newsapi.eastmoney.com/kuaixun/v2/api/yw?banner=banner&encode=ggdj&limit=20  //\'ba\'da\'c2\'ed\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151013555274783&newstype=1 //\'b5\'e3\'bb\'f7\
+\
+http://newsapi.eastmoney.com/kuaixun/v2/api/yw?banner=banner&encode=dpfx&limit=20       //\'b4\'f3\'c5\'cc\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid=20151015555910633&newstype=1    //\'b5\'e3\'bb\'f7\cf0 \cb1 \
+\
+\'b2\'e2\'ca\'d4\
+http://newsapi.eastmoney.com/kuaixun/v2/api/content?newsid= 20151014APPGPcHyQdBEIndustry&newstype=2\
+\
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0DB3B45-CD05-4722-85F8-72CC148FBAC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MoleFinance</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30277f2a-a516-4c4e-9a16-6a1a84a0c286++4773</key>
+		<string>http://2324083997%40qq.com@code.taobao.org/svn/MoleFinance/XMoleFinance</string>
+		<key>eb93531a-ae2a-4453-b0e1-219d5ba2b031++524</key>
+		<string>http://2324083997%40qq.com@code.taobao.org/svn/MoleFinance/MoleFinance</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MoleFinance.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30277f2a-a516-4c4e-9a16-6a1a84a0c286++4773</key>
+		<string>../..</string>
+		<key>eb93531a-ae2a-4453-b0e1-219d5ba2b031++524</key>
+		<string>../../../MoleFinance</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>30277f2a-a516-4c4e-9a16-6a1a84a0c286++4773</key>
+		<string>http://2324083997%40qq.com@code.taobao.org/svn/MoleFinance</string>
+		<key>eb93531a-ae2a-4453-b0e1-219d5ba2b031++524</key>
+		<string>http://2324083997%40qq.com@code.taobao.org/svn/MoleFinance</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://2324083997%40qq.com@code.taobao.org/svn/MoleFinance/XMoleFinance/MoleFinance.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30277f2a-a516-4c4e-9a16-6a1a84a0c286++4773</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>eb93531a-ae2a-4453-b0e1-219d5ba2b031++524</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MoleFinance</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30277f2a-a516-4c4e-9a16-6a1a84a0c286++4773</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XMoleFinance</string>
+		</dict>
+	</array>
+</dict>
+</plist>
